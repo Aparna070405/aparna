@@ -1,0 +1,182 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #87CEEB;
+    padding: 10px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: fantasy;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tab content styles */
+.tab-content {
+    display: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Candidate Box styles */
+.candidate-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 2px solid #007BFF;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Heading styles */
+.candidate-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Details Section styles */
+.details, .experience, .contact-details, .skills, .about-me, .projects,.code-portfolio{
+    margin-top: 20px;
+}
+
+.details p, .experience p, .contact-details p, .skills p, .about-me p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.projects {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+.code-portfolio {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+
+/* Experience section */
+.experience {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.experience-item h4 {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-item p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+/* Contact Details section */
+.contact-details {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+
+/* Skills section */
+.skills {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+
+.skills ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* About Me section */
+.about-me {
+    border-top: 2px solid #14151598;
+    padding-top: 15px;
+}
+
+/* Background colors for each tab */
+#tab1 {
+    background-color: #aec6cfb1;
+}
+
+#tab2 {
+    background-color: #cbe4f3a2;
+}
+
+#tab3 {
+    background-color: #cadae6bb;
+}
+
+#tab4 {
+    background-color: #fff0e68f;
+}
+
+#tab5 {
+    background-color: #e6e6faa2;
+}

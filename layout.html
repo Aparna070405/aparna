@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#tab1" onclick="openTab('tab1')">GROUP PORTFOLIO</a></li>
+                <li><a href="#tab2" onclick="openTab('tab2')">K.SRI NANDINI</a></li>
+                <li><a href="#tab3" onclick="openTab('tab3')">A.APARNA</a></li>
+                <li><a href="#tab4" onclick="openTab('tab4')">M.SANDEEPTHI</a></li>
+                <li><a href="#tab5" onclick="openTab('tab5')">R.BHAVANA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Tab 1 -->
+    <section id="tab1" class="tab-content active">
+        <div class="candidate-box">
+            <div class="profile-photo">
+                <label for="upload-photo-1">
+                    <input type="file" id="upload-photo-1" accept="image/*" style="display: none;">
+                    <img src="default-photo.jpg" alt="Profile Photo" id="photo-1">
+                </label>
+            </div>
+            <h1 class="candidate-name">GROUP PROJECTS</h1>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Brief introduction about the group project.</p>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>Project 1: Description</p>
+            <p>Project 2: Description</p>
+        </div>
+        
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <!-- Tab 2 -->
+    <section id="tab2" class="tab-content">
+        <div class="candidate-box">
+            <div class="profile-photo">
+                <label for="upload-photo-2">
+                    <input type="file" id="upload-photo-2" accept="image/*" style="display: none;">
+                    <img src="nandu.jpeg" alt="Profile Photo" id="photo-2">
+                </label>
+            </div>
+            <h1 class="candidate-name">KUROJU SRI NANDINI</h1>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Aspiring data scientist and analyst eager to leverage data analysis, visualization, and machine
+                learning skills to generate actionable insights and support data-driven decision-making. Seeking a
+                data science role to apply my skills in statistical analysis, predictive modeling, and data
+                visualization, with a focus on driving efficiency and supporting strategic initiatives .</p>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>CUSTOMER SEGMENTATION: Involves dividing a customer base into distinct groups based
+                on shared characteristics to tailor marketing strategies and enhance customer experience.</p>
+           
+        </div>
+        <div class="code-portfolio">
+            <h3>Code Portfolio</h3>
+            <p>GitHub: <a href="#">github.com/srinandini</a></p>
+            <p>linkedIn: <a href="#">https://www.linkedin.com/in/sri-nandini-82b627291/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
+        </div>
+        <div class="experience">
+            <h3>Experience</h3>
+            <div class="experience-item">
+                <h4>Android Developer Internship by Google & AICTE(Virtual) <span>Jan 2024-April2024</span></h4>
+                <p> Gained hands-on experience in
+                    Android development, learning to build and optimize mobile applications using Java/Kotlin and
+                    Android Studio. Developed real-world projects, focusing on UI/UX design, app performance, and
+                    debugging, while receiving mentorship from industry experts. AWS Data Engineer</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Python</li>
+                <li>R Programming</li>
+                <li>SQL</li>
+                <li>Data Analytics</li>
+                <li>Data visualization</li>
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: srinandini1015@gmail.com</p>
+            <p>Phone: 6309823212</p>
+        </div>
+    </section>
+
+    <!-- Tab 3 -->
+    <section id="tab3" class="tab-content">
+        <div class="candidate-box">
+            <div class="profile-photo">
+                <label for="upload-photo-3">
+                    <input type="file" id="upload-photo-3" accept="image/*" style="display: none;">
+                    <img src="default-photo.jpg" alt="Profile Photo" id="photo-3">
+                </label>
+            </div>
+            <h1 class="candidate-name">ANNAPRAGADA APARNA</h1>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Short bio or personal introduction.</p>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>Project 1: Description</p>
+            <p>Project 2: Description</p>
+        </div>
+        <div class="code-portfolio">
+            <h3>Code Portfolio</h3>
+            <p>GitHub: <a href="#">github.com/username</a></p>
+            <p>HackerRank: <a href="#">hackerrank.com/username</a></p>
+        </div>
+        <div class="experience">
+            <h3>Experience</h3>
+            <div class="experience-item">
+                <h4>Role at Company <span>Time Period</span></h4>
+                <p>Description of responsibilities.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+    <!-- Repeat for other tabs (tab3, tab4, tab5) using a similar structure -->
+    <section id="tab4" class="tab-content">
+        <div class="candidate-box">
+            <div class="profile-photo">
+                <label for="upload-photo-4">
+                    <input type="file" id="upload-photo-4" accept="image/*" style="display: none;">
+                    <img src="default-photo.jpg" alt="Profile Photo" id="photo-4">
+                </label>
+            </div>
+            <h1 class="candidate-name">MADDI SANDEEPTHI CHAITRAN</h1>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Short bio or personal introduction.</p>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>Project 1: Description</p>
+            <p>Project 2: Description</p>
+        </div>
+        <div class="code-portfolio">
+            <h3>Code Portfolio</h3>
+            <p>GitHub: <a href="#">github.com/username</a></p>
+            <p>HackerRank: <a href="#">hackerrank.com/username</a></p>
+        </div>
+        <div class="experience">
+            <h3>Experience</h3>
+            <div class="experience-item">
+                <h4>Role at Company <span>Time Period</span></h4>
+                <p>Description of responsibilities.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+    <section id="tab5" class="tab-content">
+        <div class="candidate-box">
+            <div class="profile-photo">
+                <label for="upload-photo-5">
+                    <input type="file" id="upload-photo-5" accept="image/*" style="display: none;">
+                    <img src="default-photo.jpg" alt="Profile Photo" id="photo-5">
+                </label>
+            </div>
+            <h1 class="candidate-name">RAMANCHA BHAVANA</h1>
+        </div>
+        <div class="about-me">
+            <h3>About Me</h3>
+            <p>Short bio or personal introduction.</p>
+        </div>
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>Project 1: Description</p>
+            <p>Project 2: Description</p>
+        </div>
+        <div class="code-portfolio">
+            <h3>Code Portfolio</h3>
+            <p>GitHub: <a href="#">github.com/username</a></p>
+            <p>HackerRank: <a href="#">hackerrank.com/username</a></p>
+        </div>
+        <div class="experience">
+            <h3>Experience</h3>
+            <div class="experience-item">
+                <h4>Role at Company <span>Time Period</span></h4>
+                <p>Description of responsibilities.</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+            </ul>
+        </div>
+        <div class="contact-details">
+            <h3>Contact Details</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <script>
+        function openTab(tabId) {
+            var tabs = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

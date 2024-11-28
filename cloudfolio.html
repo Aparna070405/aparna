@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudfolio</title>
+    <link rel="stylesheet" href="cloudfoliostyle.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic tab styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #87CEEB;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cloudfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li onclick="showTab('portfolio')">Personal Portfolio</li>
+            <li onclick="showTab('builder')">Portfolio Builder</li>
+            <li onclick="showTab('chatbot')">Chatbot</li>
+        </ul>
+    </nav>
+
+    <!-- Tab 1: Personal Portfolio -->
+    <div id="portfolio" class="tab-content">
+        <iframe src="layout.html" width="100%" height="600px"></iframe> <!-- Adjust source as needed -->
+    </div>
+
+    <!-- Tab 2: Portfolio Builder -->
+    <div id="builder" class="tab-content">
+        <iframe src="createPotfolio.html" width="100%" height="600px"></iframe> <!-- Adjust source as needed -->
+    </div>
+
+    <!-- Tab 3: Chatbot -->
+    <div id="chatbot" class="tab-content">
+        <iframe src="https://dialogflow.cloud.google.com/#/editAgent/buildmyfolioproject/" width="100%" height="600px"></iframe>
+        <!-- Replace the iframe source with the correct link to your Dialogflow chatbot -->
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Show the first tab by default
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('portfolio');
+        });
+    </script>
+    
+</body>
+</html>
